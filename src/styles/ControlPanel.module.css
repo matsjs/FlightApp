@@ -1,0 +1,112 @@
+.controlPanel {
+  width: 300px;
+  max-height: 50%;
+  z-index: 900 !important;
+  padding: 10px 10px 10px 20px;
+  position: absolute;
+  font-family: 14px/1.5 "Montserrat", Arial, Helvetica, sans-serif;
+  background-color: #fbf8f3;
+  transition: opacity 0.1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heading {
+  color: #4c5454;
+  font-style: italic;
+  font-weight: 200;
+  margin: 0;
+}
+
+.controlPanel p {
+  margin-top: 5px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.selectedCities {
+  border-color: #4c5454;
+  border-bottom-width: 1px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 15px;
+  /* transition: font-weight 0.1s ease-in-out; */
+}
+
+.selectedCities:hover {
+  font-weight: 600;
+}
+
+.selectedCities button {
+  background-color: transparent;
+  font-size: 16px;
+  color: #4c5454;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #4c5454;
+  border-radius: 50%;
+  right: 0;
+  float: right;
+}
+
+.selectedCities button:hover {
+  color: #ff6700;
+  border-color: #ff6700;
+  cursor: pointer;
+}
+
+.selectedCityName {
+  width: 250px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0;
+}
+
+.activeCities{
+  max-height: 155px;
+  overflow: scroll;
+}
+
+.activeCities::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.userInput {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="text"] {
+  font-size: 14;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+input {
+  background-color: #fbf8f3;
+  border-color: #4c5454;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 1px;
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .controlPanel {
+    width: 100vw;
+    opacity: 1;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,36 @@
+.suggestionNone {
+  color: #999;
+  padding: 0 10px 10px 10px;
+  font-size: 14px;
+
+}
+
+.suggestion {
+  z-index: 1;
+  position: absolute;
+  background-color: #fbf8f3;
+  width: 150px;
+  list-style: none;
+  margin-top: 0;
+  max-height: 120px;
+  overflow-y: auto;
+  padding-left: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-block-end: 0;
+}
+
+.suggestion::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+.suggestion li {
+  padding: 0.5rem;
+}
+
+.suggestionActive,
+.suggestion li:hover {
+  background-color: #E5E2DD;
+  cursor: pointer;
+}
